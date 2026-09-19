@@ -1,0 +1,1 @@
+Strip mining divides the array into blocks of 1,024 elements. OpenMP distributes these strips among the available threads. The omp simd directive allows the compiler to perform vectorized multiplication inside each strip. A strip size of 1,024 is suitable because it is divisible by common SIMD vector widths.

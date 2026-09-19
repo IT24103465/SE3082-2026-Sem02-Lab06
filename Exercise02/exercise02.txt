@@ -1,0 +1,1 @@
+It allows only one thread to execute the enclosed block. The selected thread can be any thread, not necessarily thread 0. The other threads skip the block. There is an implicit barrier at the end of single, so all threads wait before continuing.

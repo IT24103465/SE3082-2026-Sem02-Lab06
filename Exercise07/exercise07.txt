@@ -1,0 +1,1 @@
+The parallel region distributes the outer grid loop among the threads. Variables created inside the loops are private to each thread. The inside counter uses reduction(+:inside), giving each thread a private counter and safely adding the values after the parallel loop.

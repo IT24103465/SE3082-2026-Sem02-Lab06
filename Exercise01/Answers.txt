@@ -1,0 +1,2 @@
+How does pragma omp barrier command work?
+It forces every thread to wait until all other threads reach the barrier. Therefore, all the thread messages execute before any thread prints Outside Barrier. After the barrier, all threads continue execution.

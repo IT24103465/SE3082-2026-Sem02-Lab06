@@ -1,0 +1,1 @@
+#pragma omp master allows only the master thread, which is always thread 0, to execute the enclosed block. Other threads skip it. Unlike single, there is no implicit barrier after the master block, so other threads can continue without waiting.

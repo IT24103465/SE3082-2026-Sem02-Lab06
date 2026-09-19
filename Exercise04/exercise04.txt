@@ -1,0 +1,3 @@
+4a) Only the outer r loop is divided between the threads. The outer loop has five iterations, and each selected thread executes all ten k iterations belonging to its assigned r value.
+
+4b) collapse(2) combines the two loops into one iteration space containing 50 (r,k) combinations. These 50 iterations are distributed across the threads. This provides more parallel work and generally produces better workload distribution.

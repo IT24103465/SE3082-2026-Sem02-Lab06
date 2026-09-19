@@ -1,0 +1,2 @@
+The initial Fibonacci calculation begins inside a single region so only one thread starts it. The recursive calls are created as OpenMP tasks that can be executed by available threads. taskwait ensures both results are ready before they are added together.
+The n < 20 condition performs smaller calculations serially because creating very small tasks introduces unnecessary overhead.
